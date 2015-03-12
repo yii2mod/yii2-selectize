@@ -1,0 +1,21 @@
+{
+  "name": "yii2mod/yii2-selectize",
+  "description": "selectize.js wrapper for yii2",
+  "type": "yii2-extension",
+  "keywords": [
+    "yii2",
+    "module"
+  ],
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Igor Chepurnoy",
+      "email": "igorzfort@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "yii2mod\\selectize\\": ""
+    }
+  }
+}
