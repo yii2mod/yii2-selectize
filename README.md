@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist yii2mod/selectize "*"
+php composer.phar require --prefer-dist yii2mod/yii2-selectize "*"
 ```
 
 or add
 
 ```json
-"yii2mod/selectize": "*"
+"yii2mod/yii2-selectize": "*"
 ```
 
 to the require section of your composer.json.
