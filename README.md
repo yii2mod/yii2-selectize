@@ -1,5 +1,5 @@
 Selectize Widget for Yii 2
-=========
+========= 
 - Widget based on selectize.js extension http://brianreavis.github.io/selectize.js/
 
 Installation 
