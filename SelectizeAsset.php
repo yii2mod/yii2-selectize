@@ -13,7 +13,7 @@ class SelectizeAsset extends AssetBundle
     /**
      * @var string
      */
-    public $sourcePath = '@vendor/yii2mod/selectize/assets';
+    public $sourcePath = '@vendor/yii2mod/yii2-selectize/assets';
 
     /**
      * @var array
