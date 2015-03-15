@@ -86,7 +86,19 @@ echo $form->field($model, "attribute")->widget(Selectize::className(), [
          ];
      }
 ```
-
+4) Usage widget with plugins:
+```php
+echo Selectize::widget([
+        'name' => 'tag-selectize',
+        'pluginOptions' => [
+             // define list of plugins 
+            'plugins' => ['drag_drop', 'remove_button'],
+            'persist' => false,
+            'createOnBlur' => true,
+            'create' => true
+        ]
+ ]);
+```            
 Select Options 
 ----------------
 You can find them on the [options page](https://github.com/brianreavis/selectize.js/blob/master/docs/api.md)
