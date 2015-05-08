@@ -90,6 +90,9 @@ echo $form->field($model, "attribute")->widget(Selectize::className(), [
 ```php
 echo Selectize::widget([
         'name' => 'tag-selectize',
+        'options' => [
+             'data-data' => $values ? Json::encode($values) : null // Set default values
+        ],
         'pluginOptions' => [
              // define list of plugins 
             'plugins' => ['drag_drop', 'remove_button'],
