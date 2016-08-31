@@ -54,7 +54,7 @@ echo $form->field($model, "attribute")->widget(Selectize::className(), [
 
 3) Tagging input with remote source and default values(If you want render select input, just setup items property):
 
-- Setup view file:
+ **Setup view file:**
  
 ```php
 // setup the following to get the existing data from database
@@ -76,7 +76,7 @@ echo $form->field($model, "attribute")->widget(Selectize::className(), [
 ]);
  ```
 
-- Your action must return data in json format, example:
+ **Your action must return data in the json format, for example:**
 
 ```php
   public function actionSearch($query = null)
