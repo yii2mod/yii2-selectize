@@ -1,24 +1,32 @@
 {
-  "name": "yii2mod/yii2-selectize",
-  "description": "selectize.js wrapper for yii2",
-  "type": "yii2-extension",
-  "keywords": [
-    "yii2",
-    "module"
-  ],
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Igor Chepurnoy",
-      "email": "igorzfort@gmail.com"
+    "name": "yii2mod/yii2-selectize",
+    "description": "selectize.js wrapper for yii2",
+    "type": "yii2-extension",
+    "keywords": [
+        "yii2 selectize",
+        "yii2 selectize.js",
+        "yii2 select",
+        "yii2 tagging"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Igor Chepurnoy",
+            "email": "igorzfort@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "bower-asset/selectize.js": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "yii2mod\\selectize\\": ""
+        }
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "bower-asset-library": "vendor/bower"
+        }
     }
-  ],
-  "require": {
-    "yiisoft/yii2": "*"
-  },
-  "autoload": {
-    "psr-4": {
-      "yii2mod\\selectize\\": ""
-    }
-  }
 }

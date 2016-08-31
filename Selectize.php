@@ -32,29 +32,23 @@ class Selectize extends InputWidget
     public $pluginOptions = [];
 
     /**
-     * Initializes the object.
-     */
-    public function init()
-    {
-        parent::init();
-    }
-
-    /**
-     * Render selectize widget
-     * @return string|void
+     * @inheritdoc
      */
     public function run()
     {
-        if (is_null($this->items)) {
+        if (empty($this->items)) {
             $this->renderInput();
         } else {
             $this->renderDropDown();
         }
+
         $this->registerAssets();
     }
 
     /**
      * Register client assets
+     *
+     * @return void
      */
     protected function registerAssets()
     {
@@ -65,7 +59,8 @@ class Selectize extends InputWidget
     }
 
     /**
-     * Return plugin options in json format
+     * Get plugin options in the json format
+     *
      * @return string
      */
     public function getPluginOptions()
@@ -80,11 +75,14 @@ class Selectize extends InputWidget
                 }
             ");
         }
+
         return Json::encode($this->pluginOptions);
     }
 
     /**
      * Return input id
+     *
+     * @return string
      */
     public function getInputId()
     {

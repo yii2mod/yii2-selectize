@@ -11,26 +11,26 @@ use yii\web\AssetBundle;
 class SelectizeAsset extends AssetBundle
 {
     /**
-     * @var string
+     * @var string the directory that contains the source asset files for this asset bundle.
      */
-    public $sourcePath = '@vendor/yii2mod/yii2-selectize/assets';
+    public $sourcePath = '@bower/selectize.js/dist';
 
     /**
-     * @var array
+     * @var array list of CSS files that this bundle contains.
      */
     public $css = [
         'css/selectize.default.css'
     ];
 
     /**
-     * @var array
+     * @var array list of JavaScript files that this bundle contains.
      */
     public $js = [
-        'js/selectize.js',
+        'js/standalone/selectize.js',
     ];
 
     /**
-     * @var array
+     * @var array list of bundle class names that this bundle depends on.
      */
     public $depends = [
         'yii\web\YiiAsset',
