@@ -80,13 +80,13 @@ echo $form->field($model, "attribute")->widget(Selectize::className(), [
 
 ```php
   public function actionSearch($query = null)
-     {
-         Yii::$app->response->format = Response::FORMAT_JSON;
-         return [
-             ['name' => 'Search Item 1'],
-             ['name' => 'Search Item 2'],
-         ];
-     }
+  {
+      Yii::$app->response->format = Response::FORMAT_JSON;
+      return [
+          ['name' => 'Search Item 1'],
+          ['name' => 'Search Item 2'],
+      ];
+  }
 ```
 4) Usage widget with plugins:
 ```php
