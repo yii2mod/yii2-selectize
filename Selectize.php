@@ -36,7 +36,7 @@ class Selectize extends InputWidget
      */
     public function run()
     {
-        if (empty($this->items)) {
+        if (!is_array($this->items)) {
             $this->renderInput();
         } else {
             $this->renderDropDown();
