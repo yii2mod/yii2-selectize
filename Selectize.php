@@ -10,12 +10,13 @@ use yii\widgets\InputWidget;
 
 /**
  * Class Selectize
+ *
  * @package yii2mod\selectize
  */
 class Selectize extends InputWidget
 {
     /**
-     * @var array|null $items the option data items.
+     * @var array|null the option data items
      */
     public $items;
 
@@ -47,8 +48,6 @@ class Selectize extends InputWidget
 
     /**
      * Register client assets
-     *
-     * @return void
      */
     protected function registerAssets()
     {
