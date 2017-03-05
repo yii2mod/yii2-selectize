@@ -68,9 +68,9 @@ class Selectize extends InputWidget
             $url = Url::to($this->url);
             $this->pluginOptions['load'] = new JsExpression("
                 function (query, callback) {
-	                if (!query.length) return callback();
-    	            $.getJSON('$url', { query: encodeURIComponent(query) }, function (data) { callback(data); })
-    	            .fail(function () { callback();	});
+                    if (!query.length) return callback();
+                    $.getJSON('$url', { query: encodeURIComponent(query) }, function (data) { callback(data); })
+                    .fail(function () { callback(); });
                 }
             ");
         }
