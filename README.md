@@ -1,6 +1,12 @@
-Selectize Widget for Yii 2
-==========================
-Widget based on selectize.js extension http://brianreavis.github.io/selectize.js/
+<p align="center">
+    <a href="https://github.com/yiisoft" target="_blank">
+        <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
+    </a>
+    <h1 align="center">Yii2 Selectize Widget</h1>
+    <br>
+</p>
+
+Widget based on selectize.js extension https://selectize.github.io/selectize.js/
 
 [![Latest Stable Version](https://poser.pugx.org/yii2mod/yii2-selectize/v/stable)](https://packagist.org/packages/yii2mod/yii2-selectize) [![Total Downloads](https://poser.pugx.org/yii2mod/yii2-selectize/downloads)](https://packagist.org/packages/yii2mod/yii2-selectize) [![License](https://poser.pugx.org/yii2mod/yii2-selectize/license)](https://packagist.org/packages/yii2mod/yii2-selectize)
 [![Build Status](https://travis-ci.org/yii2mod/yii2-selectize.svg?branch=master)](https://travis-ci.org/yii2mod/yii2-selectize)
