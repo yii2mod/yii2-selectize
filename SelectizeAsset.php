@@ -35,6 +35,5 @@ class SelectizeAsset extends AssetBundle
      */
     public $depends = [
         'yii\web\JqueryAsset',
-        'yii\jui\JuiAsset',
     ];
 }

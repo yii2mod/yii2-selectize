@@ -35,6 +35,25 @@ class Selectize extends InputWidget
     /**
      * @inheritdoc
      */
+    public function init()
+    {
+        parent::init();
+
+        if (isset($this->pluginOptions['plugins'])
+            && in_array('drag_drop', $this->pluginOptions['plugins'], true)
+        ) {
+            Yii::$container->set(SelectizeAsset::class, [
+                'depends' => [
+                    'yii\web\JqueryAsset',
+                    'yii\jui\JuiAsset',
+                ],
+            ]);
+        }
+    }
+
+    /**
+     * @inheritdoc
+     */
     public function run()
     {
         if (!is_array($this->items)) {
